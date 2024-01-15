@@ -2273,6 +2273,8 @@ pre code {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
+
+
 @media screen and (prefers-reduced-motion: reduce) {
   .form-control {
     -webkit-transition: none;
@@ -2770,11 +2772,15 @@ textarea.form-control.is-invalid {
   width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 767.98px) {
+  .Contact {
+    z-index: 1;
+    transform: translateX(-15%);
+  }
   .form-inline label {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2782,6 +2788,7 @@ textarea.form-control.is-invalid {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 0;
+    padding: 0;
   }
 
   .form-inline .form-group {
@@ -12843,6 +12850,9 @@ h5,
 @media (max-width: 767.98px) {
   .services {
     margin-bottom: 40px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 }
 
